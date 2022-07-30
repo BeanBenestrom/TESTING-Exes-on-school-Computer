@@ -5,6 +5,7 @@ include(CTest)
 enable_testing()
 
 add_executable(EPIC "src/main.cpp" "src/test.cpp")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libgcc")
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
